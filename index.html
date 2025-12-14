@@ -63,11 +63,11 @@
     </header>
 
     <main>
-      <div id="home" data-aos="fade-up"></div>
-      <div id="about" data-aos="fade-up"></div>
-      <div id="project" data-aos="fade-up"></div>
-      <div id="services" data-aos="fade-up"></div>
-      <div id="contact" data-aos="fade-up"></div>
+      <div id="home"></div>
+      <div id="about"></div>
+      <div id="project"></div>
+      <div id="services"></div>
+      <div id="contact"></div>
     </main>
 
 
@@ -102,6 +102,10 @@
           .then(html => {
             document.getElementById(id).innerHTML = html;
 
+            if (id === "home") {
+              initTypingEffect(); // 🔥 load typing effect
+            }
+
             // 🔥 PENTING: hanya setelah contact masuk DOM
             if (id === "contact") {
               initializeFormHandler();
@@ -112,6 +116,7 @@
       });
     </script>
 
+    <script src="js/typing-efect.js"></script>
     <script src="js/form-handler.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
