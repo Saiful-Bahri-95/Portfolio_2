@@ -121,26 +121,56 @@ header {
 }
 
 .btn-home1 {
-  background-color: #000000;
+  /* background-color: #000000;
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 10px;
   padding: 10px 10px;
+  cursor: pointer; */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background: transparent;
+  color: #000;
+  font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-home1:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 .btn-home2 {
-  background-color: transparent;
-  border: 2px solid black;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
   border-radius: 10px;
-  padding: 10px 10px;
+  border: 2px solid #000;
+  background: transparent;
+  color: #000;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.4s;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.btn-home2:hover{
-    background-color: #000000;
-    color: #fff;
+.btn-home2:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-home2.downloading {
+  pointer-events: none;
+  opacity: 0.7;
 }
 
 hr {
