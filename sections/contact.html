@@ -1,50 +1,92 @@
-    <section class="contact" id="contact" data-aos="fade-up">
-          <p>CONTACT</p>
-          <h1>Get in Touch with Us</h1>
-          <div class="contact-content">
-        <div class="contact-info slide-in-left">
-          <p>I'm always open to discuss exciting projects and new opportunities. Let's collaborate!</p>
-          <div class="contact-details">
-            <div class="contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <span>contact@saiful-bahri.pro</span>
-            </div>
-            <div class="contact-item">
-              <i class="fa-solid fa-phone"></i>
-              <span>+62 896 128 938 34</span>
-            </div>
-            <div class="contact-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>Indonesia, Jakarta</span>
-            </div>
-          </div>
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact" data-aos="fade-up">
 
-          <div class="social-links">
-            <a href="https://github.com/Saiful-Bahri-95" class="social-link" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/saiful-bahri47" class="social-link" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://wa.me/6289612893834" class="social-link" target="_blank">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
-        </div>
+  <div class="section-head">
+    <p class="section-kicker"><span>04</span> CONTACT</p>
+    <h1 class="section-title">
+      Let's build<br>
+      <span class="serif-italic">something great.</span>
+    </h1>
+    <div class="hrrr"><hr></div>
+  </div>
 
-        <div class="contact-form slide-in-right">
-          <form id="contactEmail" method="POST" role="form">
-            <div class="form-group">
-              <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required="">
-            </div>
-            <div class="form-group">
-              <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-            </div>
-            <div class="form-group">
-              <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn-send">Send Message</button>
-          </form>
+  <div class="contact-content">
+
+    <!-- LEFT: Info -->
+    <div class="contact-info">
+      <p class="contact-lead">
+        I'm currently <strong>open to freelance projects and full-time opportunities</strong>. If you have a project, an idea, or just want to say hi — my inbox is always open.
+      </p>
+
+      <div class="contact-details">
+        <a href="mailto:contact@saiful-bahri.pro" class="contact-item">
+          <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="ci-text">
+            <span class="ci-label">Email</span>
+            <span class="ci-value">contact@saiful-bahri.pro</span>
+          </div>
+        </a>
+        <a href="https://wa.me/6289612893834" target="_blank" rel="noopener" class="contact-item">
+          <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="ci-text">
+            <span class="ci-label">WhatsApp</span>
+            <span class="ci-value">+62 896 128 938 34</span>
+          </div>
+        </a>
+        <div class="contact-item static">
+          <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="ci-text">
+            <span class="ci-label">Location</span>
+            <span class="ci-value">Jakarta, Indonesia</span>
+          </div>
         </div>
       </div>
-    </section>
+
+      <div class="social-links">
+        <a href="https://github.com/Saiful-Bahri-95" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/saiful-bahri47" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://wa.me/6289612893834" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/impal_ipul/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="contact-form">
+      <div class="form-card">
+        <div class="form-header">
+          <span class="form-dot red"></span>
+          <span class="form-dot yellow"></span>
+          <span class="form-dot green"></span>
+          <span class="form-title">new-message.txt</span>
+        </div>
+
+        <form id="contactEmail" method="POST" role="form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" placeholder="Tell me about your project, goals, timeline, and budget..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-send">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

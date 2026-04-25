@@ -1,131 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saiful Bahri's portfolio and freelance services for web design and development — trusted by clients in Indonesia and worldwide.">
-    <meta name="author" content="Saiful Bahri">
-    <link rel="icon" href="images/icon-sb.png" type="image/png" />
-    <title>Saiful Bahri | Web Design</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300..800&family=Playfair+Display:wght@400..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Saiful Bahri — Frontend Developer & Web Designer | Jakarta, Indonesia</title>
+  <meta name="title" content="Saiful Bahri — Frontend Developer & Web Designer | Jakarta, Indonesia" />
+  <meta name="description" content="Freelance frontend developer based in Jakarta, Indonesia. I design and build modern, fast, and conversion-driven websites for startups, businesses, and personal brands worldwide." />
+  <meta name="keywords" content="frontend developer Indonesia, web designer Jakarta, freelance developer, portfolio website, React developer, UI UX designer Indonesia, Saiful Bahri" />
+  <meta name="author" content="Saiful Bahri" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://saiful-bahri.pro/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://saiful-bahri.pro/" />
+  <meta property="og:title" content="Saiful Bahri — Frontend Developer & Web Designer" />
+  <meta property="og:description" content="I craft modern, blazing-fast websites that turn visitors into customers. Based in Jakarta, working worldwide." />
+  <meta property="og:image" content="https://saiful-bahri.pro/images/og-cover.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="id_ID" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://saiful-bahri.pro/" />
+  <meta name="twitter:title" content="Saiful Bahri — Frontend Developer & Web Designer" />
+  <meta name="twitter:description" content="I craft modern, blazing-fast websites that turn visitors into customers." />
+  <meta name="twitter:image" content="https://saiful-bahri.pro/images/og-cover.jpg" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#05050a" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/icon-sb.png" type="image/png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Saiful Bahri",
+    "jobTitle": "Frontend Developer & Web Designer",
+    "url": "https://saiful-bahri.pro",
+    "image": "https://saiful-bahri.pro/images/profile1.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jakarta",
+      "addressCountry": "ID"
+    },
+    "sameAs": [
+      "https://github.com/Saiful-Bahri-95",
+      "https://www.linkedin.com/in/saiful-bahri47",
+      "https://www.instagram.com/impal_ipul/"
+    ],
+    "knowsAbout": ["Frontend Development", "Web Design", "UI/UX Design", "React", "Flutter", "JavaScript"]
+  }
+  </script>
 </head>
-  <body>
-    <div id="loading-screen">
-      <div class="loading-content">
-        <i class="fa-solid fa-laptop-code fa-5x main-icon hidden"></i>
 
-        <h1 id="loading-text" class="hidden">Hi, Welcome</h1>
+<body>
 
-        <div class="sub-icons">
-          <i class="fa-brands fa-github fa-2x hidden"></i>
-          <i class="fa-solid fa-code fa-2x hidden"></i>
-          <i class="fa-solid fa-user fa-2x hidden"></i>
+  <!-- ===== PRELOADER ===== -->
+  <div id="loading-screen">
+    <div class="loader-grid"></div>
+    <div class="loading-content">
+      <div class="loader-mark">
+        <span class="mark-bracket">&lt;</span>
+        <span class="mark-letters">SB</span>
+        <span class="mark-bracket">/&gt;</span>
+      </div>
+      <div class="loader-bar"><span></span></div>
+      <p class="loader-text">Initializing portfolio<span class="dots">...</span></p>
+    </div>
+  </div>
+
+  <!-- ===== AMBIENT BACKGROUND ===== -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise"></div>
+  </div>
+
+  <!-- ===== TOP BAR (BRAND + STATUS) ===== -->
+  <div class="topbar">
+    <a href="#home" class="brand">
+      <span class="brand-bracket">&lt;</span>Saiful<span class="brand-dot">.</span>Bahri<span class="brand-bracket">/&gt;</span>
+    </a>
+    <div class="status-pill">
+      <span class="status-dot"></span>
+      <span class="status-text">Available for work</span>
+    </div>
+  </div>
+
+  <!-- ===== FLOATING NAV ===== -->
+  <header class="header-list">
+    <nav class="div-list" aria-label="Primary">
+      <ul class="ul-list">
+        <li class="active">
+          <a href="#home" data-tooltip="Home"><i class="fa-regular fa-house"></i></a>
+        </li>
+        <li>
+          <a href="#about" data-tooltip="About"><i class="fa-regular fa-user"></i></a>
+        </li>
+        <li>
+          <a href="#project" data-tooltip="Projects"><i class="fa-regular fa-folder-open"></i></a>
+        </li>
+        <li>
+          <a href="#services" data-tooltip="Services"><i class="fa-solid fa-code"></i></a>
+        </li>
+        <li>
+          <a href="#contact" data-tooltip="Contact"><i class="fa-regular fa-envelope"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+    <div id="home"></div>
+    <div id="about"></div>
+    <div id="project"></div>
+    <div id="services"></div>
+    <div id="contact"></div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2 class="footer-logo">
+          <span class="brand-bracket">&lt;</span>Saiful<span class="brand-dot">.</span>Bahri<span class="brand-bracket">/&gt;</span>
+        </h2>
+        <p class="footer-tag">Building digital experiences that don't just look good — they perform.</p>
+        <div class="footer-social">
+          <a href="https://github.com/Saiful-Bahri-95" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/saiful-bahri47" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://wa.me/6289612893834" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/impal_ipul/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
+      </div>
 
-        <h2 id="designer-text" class="hidden">Design by Saiful</h2>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-regular fa-envelope"></i> contact@saiful-bahri.pro</li>
+          <li><i class="fa-solid fa-phone"></i> +62 896 128 938 34</li>
+          <li><i class="fa-solid fa-location-dot"></i> Jakarta, Indonesia</li>
+        </ul>
       </div>
     </div>
-    <header class="header-list">
-          <div class="div-list ">
-              <ul class="ul-list">
-                  <li class="active">
-                      <i class="fa-regular fa-house"></i>
-                      <a href="#home">Home</a>
-                  </li>
-                  <li>
-                      <i class="fa-regular fa-address-card"></i>
-                      <a href="#about">About</a>
-                  </li>
-                  <li>
-                      <i class="fa-regular fa-folder-open"></i>
-                      <a href="#project">Projects</a>
-                  </li>
-                  <li>
-                      <i class="fa-solid fa-code"></i>
-                      <a href="#services">services</a>
-                  </li>
-                  <li>
-                      <i class="fa-regular fa-envelope"></i>
-                      <a href="#contact">Contact</a>
-                  </li>
-              </ul>
-          </div>
-    </header>
 
-    <main>
-      <div id="home"></div>
-      <div id="about"></div>
-      <div id="project"></div>
-      <div id="services"></div>
-      <div id="contact"></div>
-    </main>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Saiful Bahri. Crafted with <i class="fa-solid fa-heart"></i> in Jakarta.</p>
+      <p class="footer-meta">All systems operational <span class="live-dot"></span></p>
+    </div>
+  </footer>
 
+  <!-- ===== LOADERS FOR SECTIONS ===== -->
+  <script>
+    ["home","about","project","services","contact"].forEach(id => {
+      fetch(`sections/${id}.html`)
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById(id).innerHTML = html;
+          if (id === "home") initTypingEffect();
+          if (id === "contact") initializeFormHandler();
+          if (typeof AOS !== 'undefined') AOS.refresh();
+        });
+    });
+  </script>
 
-    <footer class="footer">
-
-      <div class="footer-container">
-        <h2 class="footer-logo">Saiful Bahri</h2>
-
-        <ul class="footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <div class="footer-social">
-            <a href="https://github.com/Saiful-Bahri-95" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/saiful-bahri47" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://wa.me/6289612893834" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-
-        <p class="footer-copy">&copy; 2025 Saiful Bahri. All Rights Reserved.</p>
-
-      </div>
-    </footer>
-
-    <script>
-      ["home","about","project","services","contact"].forEach(id => {
-        fetch(`sections/${id}.html`)
-          .then(res => res.text())
-          .then(html => {
-            document.getElementById(id).innerHTML = html;
-
-            if (id === "home") {
-              initTypingEffect(); // 🔥 load typing effect
-            }
-
-            // 🔥 PENTING: hanya setelah contact masuk DOM
-            if (id === "contact") {
-              initializeFormHandler();
-            }
-
-            AOS.refresh();
-          });
-      });
-    </script>
-
-    <script src="js/typing-efect.js"></script>
-    <script src="js/form-handler.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1500,
-        once: true
-      });
-    </script>
-
-  </body>
+  <script src="js/typing-efect.js"></script>
+  <script src="js/form-handler.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, offset: 80 });
+  </script>
+</body>
 </html>

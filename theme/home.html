@@ -3,19 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dynamic Project Showcase</title>
+
+  <!-- SEO -->
+  <title>Project Showcase | Saiful Bahri</title>
+  <meta name="description" content="Live previews of websites, portfolios, e-commerce, and branding projects designed and developed by Saiful Bahri." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Project Showcase | Saiful Bahri" />
+  <meta property="og:description" content="Live previews of websites, portfolios, e-commerce, and branding projects." />
+  <meta property="og:type" content="website" />
+
+  <meta name="theme-color" content="#05050a" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Ambient Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise"></div>
+  </div>
+
+  <!-- Top bar -->
   <header class="top-bar">
-    <a href="../index.html" class="home-button">Home</a>
+    <a href="../index.html" class="home-button">
+      <i class="fa-solid fa-arrow-left"></i>
+      <span>Back to portfolio</span>
+    </a>
+    <div class="theme-pill">
+      <span class="theme-dot"></span>
+      <span id="theme-label">Loading…</span>
+    </div>
   </header>
 
-  <h1 class="title">Project Showcase</h1>
-  <div class="card-container" id="project-container"></div>
+  <!-- Hero -->
+  <section class="showcase-hero">
+    <p class="section-kicker"><span id="theme-num">00</span> SHOWCASE</p>
+    <h1 class="section-title">
+      <span id="theme-title">Project</span><br>
+      <span class="serif-italic">Showcase.</span>
+    </h1>
+    <p class="hero-desc" id="theme-desc">
+      A curated collection of live previews. Click any card to open the project in a new tab.
+    </p>
+    <div class="hero-divider"></div>
+  </section>
 
+  <!-- Cards -->
+  <main>
+    <div class="card-container" id="project-container">
+      <!-- skeletons (replaced by JS) -->
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+      <div class="card-skeleton"></div>
+    </div>
+
+    <!-- Empty state (shown if no projects) -->
+    <div class="empty-state" id="empty-state" hidden>
+      <i class="fa-solid fa-folder-open"></i>
+      <h3>No projects in this category yet</h3>
+      <p>Check back soon — new work is added regularly.</p>
+      <a href="../index.html#project" class="btn-primary">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Back to all projects</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Saiful Bahri. All rights reserved.</p>
+    <p>&copy; 2025 Saiful Bahri. Crafted with <i class="fa-solid fa-heart"></i> in Jakarta.</p>
   </footer>
 
   <script src="script.js"></script>
